@@ -14,7 +14,7 @@ const Alert = ({ preview }: Props) => {
         "bg-neutral-50 border-neutral-200": !preview,
       })}
     >
-      <Container>
+      {/* <Container>
         <div className="py-2 text-center text-sm">
           {preview ? (
             <>
@@ -40,7 +40,7 @@ const Alert = ({ preview }: Props) => {
             </>
           )}
         </div>
-      </Container>
+      </Container> */}
     </div>
   );
 };

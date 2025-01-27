@@ -1,3 +1,129 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Global Styles for Custom Cyberpunk Aesthetic */
+
+/* 1. General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #000428, #004e92);
+    color: rgb(200, 220, 220);
+    overflow-x: hidden;
+  }
+  
+  /* 2. Custom Hover Effect for Text */
+  .hover\:underline:hover {
+    -moz-text-decoration-color: #aeb4c1;
+    text-shadow: #181911 1px 2px 5px, #00ffff 1px 0 20px;
+    font-weight: 600;
+    text-decoration-line: none;
+    /* animation: pulse 1.5s infinite; */
+    transition: text-shadow 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+  }
+  :root {
+    --glow-color: rgba(0, 255, 255, 0.8);
+  }
+  @keyframes pulse-text {
+    0%, 100% {
+      text-shadow: #181911 1px 2px 5px, #00ffff 1px 0 15px;
+    }
+    50% {
+      text-shadow: #181911 1px 2px 5px, #00ffff 1px 0 30px;
+    }
+  }
+
+  .dark\:bg-slate-800:is(.dark *) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(20 31 49 / var(--tw-bg-opacity, 1));
+  }
+  
+  .dark\:bg-slate-900:is(.dark *) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1));
+    
+  }
+  
+  .dark\:text-slate-400:is(.dark *) {
+    --tw-text-opacity: 1;
+    /* text-decoration-color: rgb(200 220 220 / var(--tw-text-opacity, 1)); */
+    /* color: rgb(200 220 220 / var(--tw-text-opacity, 1)); */
+    text-shadow: 1px 2px 5px #181911, 1px 0 20px #0ff;
+  }
+  
+  /* 3. Custom Glow Effect for Images */
+  .pulse-image {
+    display: inline-block;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.8);
+    /* animation: pulse-image 1.5s infinite; */
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  @keyframes pulse-image {
+    0%, 100% {
+      box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.8);
+      /* transform: scale(1); */
+    }
+    50% {
+      box-shadow: 0px 0px 30px rgba(0, 255, 255, 1);
+      /* transform: scale(1.05); */
+    }
+  }
+  
+  /* 4. Button Styles for Cyberpunk Look */
+  .button {
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.5s ease, box-shadow 0.3s ease;
+  }
+
+  .pulse-image:hover {
+    animation: pulse-hover 1.5s infinite;
+  }
+  
+  @keyframes pulse-hover {
+    0%, 100% {
+      box-shadow: 0px 0px 15px rgba(255, 0, 255, 0.8);
+      /* transform: scale(1.1); */
+    }
+    50% {
+      box-shadow: 0px 0px 40px rgba(255, 0, 255, 1);
+      /* transform: scale(1.15); */
+    }
+  }
+  
+  .button:hover {
+    background: linear-gradient(90deg, #ff007f, #00ffbf);
+    box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.8), 0px 0px 20px rgba(0, 255, 255, 0.8);
+  }
+  
+  /* 5. Utility Classes */
+  .shadow-custom {
+    box-shadow: 0px 0px 30px rgb(232, 251, 25);
+  }
+  
+  .transition-all {
+    transition: all 0.3s ease;
+  }
+  
+  .rounded {
+    border-radius: 25px;
+  }
+  
+  .text-glow {
+    color: #f3ff14;
+    text-shadow: 0px 0px 10px #f3ff14;
+  }
+  

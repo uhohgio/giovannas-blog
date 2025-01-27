@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import cn from "classnames";
 import { ThemeSwitcher } from "./_components/theme-switcher";
+// import navbar from "./_components/navbar";
+import NavBar from "./_components/navbar";
 
 import "./globals.css";
 
@@ -60,6 +62,10 @@ export default function RootLayout({
       <body
         className={cn(inter.className, "dark:bg-slate-900 dark:text-slate-400")}
       >
+        {/* <navbar /> */}
+        <div className="sticky top-0 z-50">
+          <NavBar />
+        </div>
         <ThemeSwitcher />
         <div className="min-h-screen">{children}</div>
         <Footer />

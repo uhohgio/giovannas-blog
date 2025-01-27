@@ -15,9 +15,14 @@ const CoverImage = ({ title, src, slug }: Props) => {
       alt={`Cover Image for ${title}`}
       className={cn("shadow-sm w-full", {
         "hover:shadow-lg transition-shadow duration-200": slug,
-      })}
+      }, "pulse-image")}
       width={1300}
       height={630}
+      style={{
+        border: "4px solid #99dddd",
+        borderRadius: "5px",
+        boxShadow: "0px 0px 25px #00ffff",
+      }}
     />
   );
   return (
@@ -32,5 +37,7 @@ const CoverImage = ({ title, src, slug }: Props) => {
     </div>
   );
 };
+
+
 
 export default CoverImage;
