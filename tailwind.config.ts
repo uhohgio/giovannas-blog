@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 
+
 const config: Config = {
   darkMode: "class",
   content: [
@@ -15,11 +16,15 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
+        
         "accent-1": "#FAFAFA",
         "accent-2": "#EAEAEA",
         "accent-7": "#333",
         success: "#0070f3",
         cyan: "#79FFE1",
+        slate: {
+          900: "rgb(48 25 52)", // Custom color for dark:bg-slate-900
+        },
       },
       spacing: {
         28: "7rem",
@@ -42,3 +47,8 @@ const config: Config = {
   plugins: [],
 };
 export default config;
+
+
+
+
+

@@ -1,6 +1,18 @@
-import React from "react";
+"use client"
+
+import React, { useState } from "react";
+import { ThemeSwitcher } from "./theme-switcher";
+import { usePathname } from "next/navigation";
 
 const NavBar: React.FC = () => {
+  const pathname = usePathname();
+
+  const [activeLink, setActiveLink] = useState<string | null>(null);
+
+  const handleClick = (link: string) => {
+    setActiveLink(link);
+  };
+
   return (
     <div>
       {/* Styles */}
@@ -15,8 +27,8 @@ const NavBar: React.FC = () => {
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: rgba(78, 187, 187, 0.5);
-            box-shadow: 0px 5px 5px rgba(78, 187, 187, 0.5); 
+            background-color: rgba(255, 0, 255, 0.5);
+            box-shadow: 0px 5px 5px rgba(255, 0, 255, 0.5); 
             position: sticky;
             top: 0;
           }
@@ -27,41 +39,52 @@ const NavBar: React.FC = () => {
 
           li a {
             display: block;
-            color: rgb(200, 220, 220);
+            color: #cee;
             text-align: center;
-            padding: 14px 16px;
+            padding: 7px 10px;
             text-decoration: none;
-            text-shadow: #181911 1px 2px 5px, #00ffff 1px 0 20px;
+            text-shadow: #181911 1px 2px 5px, #f0f 1px 0 20px;
           }
 
           li a:hover {
-            background-color: #111;
-            border-radius: 5px;
-            padding: 14px 16px;
+            background-color: rgba(158, 243, 243, 0.73); 
+            position: sticky;;
+            border-radius: 10px;
+            padding: 7px 16px;
+            transform: scale(1.1);
           }
 
           .active {
             border-radius: 5px;
-            padding: 14px 16px;
-            background-color:rgba(30, 41, 59, 0.5);
+            padding: 7px 16px;
+            background-color:rgba(255, 0, 255, 0.4);
           }
         `}
       </style>
 
       {/* Navbar */}
-      <ul>
-        <li>
-          <a className="active" href="#home">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="#news"> Tech Stack </a>
-        </li>
-        <li>
-          <a href="#contact"> My Projects </a>
-        </li>
-      </ul>
+      <nav>
+        <ul>
+          {[
+            { name: "Home", href: "/" },
+            { name: "Tech Stack", href: "/tech_stack" },
+            { name: "My Projects", href: "/my_projects" },
+          ].map((link) => (
+            <li key={link.href}>
+              <a
+                href={link.href}
+                className={pathname === link.href ? "active" : ""}
+                onClick={() => handleClick(link.href)} // for some reason home doesn't work without this
+              >
+                {link.name}
+              </a>
+            </li>
+          ))}
+          <li>
+            <ThemeSwitcher />
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 };

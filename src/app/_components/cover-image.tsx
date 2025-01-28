@@ -19,9 +19,9 @@ const CoverImage = ({ title, src, slug }: Props) => {
       width={1300}
       height={630}
       style={{
-        border: "4px solid #99dddd",
+        border: "4px solid #d9d",
         borderRadius: "5px",
-        boxShadow: "0px 0px 25px #00ffff",
+        boxShadow: "0px 0px 25px #f0f",
       }}
     />
   );

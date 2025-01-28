@@ -23,6 +23,9 @@ export default function Index() {
           slug={heroPost.slug}
           excerpt={heroPost.excerpt}
         />
+        <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
+          Highlighted Work
+        </h2>
         {morePosts.length > 0 && <MoreStories posts={morePosts} />}
       </Container>
     </main>

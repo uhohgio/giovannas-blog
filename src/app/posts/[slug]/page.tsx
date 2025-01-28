@@ -8,6 +8,8 @@ import Container from "@/app/_components/container";
 import Header from "@/app/_components/header";
 import { PostBody } from "@/app/_components/post-body";
 import { PostHeader } from "@/app/_components/post-header";
+// import { PostPhotos } from "@/app/_components/post-photos";
+import ImageList from "@/app/_components/image-list";
 
 export default async function Post(props: Params) {
   const params = await props.params;
@@ -18,10 +20,11 @@ export default async function Post(props: Params) {
   }
 
   const content = await markdownToHtml(post.content || "");
+  const images = await markdownToHtml(post.images)
 
   return (
     <main>
-      <Alert preview={post.preview} />
+      {/* <Alert preview={post.preview} /> */}
       <Container>
         <Header />
         <article className="mb-32">
@@ -32,6 +35,12 @@ export default async function Post(props: Params) {
             // author={post.author}
           />
           <PostBody content={content} />
+          {/* <h2> Photo Gallery </h2> */}
+          {/* <PostPhotos content={photos} /> */}
+          {/* style={{ display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+          gridGap: '1rem' }} */}
+          <ImageList images={post.images} /> 
         </article>
       </Container>
     </main>

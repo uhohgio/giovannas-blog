@@ -13,20 +13,20 @@ export function Footer() {
           <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
             <a
               href="https://www.linkedin.com/in/gio-ehrig-691901214/"
-              className="mx-3 font-bold hover:underline"
+              className="mx-3 font-regular hover:underline"
             >
               
               LinkedIn 
             </a>
             <a
               href="https://github.com/uhohgio"
-              className="mx-3 font-bold hover:underline"
+              className="mx-3 font-regular hover:underline"
             >
               GitHub
             </a>
             <a
               href="mailto:gioehrig@gmail.com"
-              className="mx-3 font-bold hover:underline"
+              className="mx-3 font-regular hover:underline"
             >
               Email
             </a>

@@ -10,49 +10,35 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Orbitron', sans-serif;
-    background: linear-gradient(135deg, #000428, #004e92);
-    color: rgb(200, 220, 220);
+    background: linear-gradient(135deg,#cc2dec, #330c53);
+    color: #cee;
+    text-shadow: 2px 3px 5px #1f0028;
+    text-decoration-color: #000428;
     overflow-x: hidden;
   }
   
   /* 2. Custom Hover Effect for Text */
   .hover\:underline:hover {
     -moz-text-decoration-color: #aeb4c1;
-    text-shadow: #181911 1px 2px 5px, #00ffff 1px 0 20px;
-    font-weight: 600;
-    text-decoration-line: none;
+    text-shadow: #181911 1px 2px 5px, #f0f 1px 0 20px;
+    font-weight: bold;
+    text-decoration-line: none !important;
     /* animation: pulse 1.5s infinite; */
-    transition: text-shadow 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+    transition: text-shadow 0.2s ease-in-out, font-weight 0.2s ease-in-out;
   }
   :root {
-    --glow-color: rgba(0, 255, 255, 0.8);
+    --glow-color: rgba(255, 0, 255, 0.8);
   }
   @keyframes pulse-text {
     0%, 100% {
-      text-shadow: #181911 1px 2px 5px, #00ffff 1px 0 15px;
+      text-shadow: #181911 1px 2px 5px, #f0f 1px 0 15px;
     }
     50% {
-      text-shadow: #181911 1px 2px 5px, #00ffff 1px 0 30px;
+      text-shadow: #181911 1px 2px 5px, #f0f 1px 0 30px;
     }
   }
 
-  .dark\:bg-slate-800:is(.dark *) {
-    --tw-bg-opacity: 1;
-    background-color: rgb(20 31 49 / var(--tw-bg-opacity, 1));
-  }
-  
-  .dark\:bg-slate-900:is(.dark *) {
-    --tw-bg-opacity: 1;
-    background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1));
-    
-  }
-  
-  .dark\:text-slate-400:is(.dark *) {
-    --tw-text-opacity: 1;
-    /* text-decoration-color: rgb(200 220 220 / var(--tw-text-opacity, 1)); */
-    /* color: rgb(200 220 220 / var(--tw-text-opacity, 1)); */
-    text-shadow: 1px 2px 5px #181911, 1px 0 20px #0ff;
-  }
+
   
   /* 3. Custom Glow Effect for Images */
   .pulse-image {
@@ -125,5 +111,26 @@ body {
   .text-glow {
     color: #f3ff14;
     text-shadow: 0px 0px 10px #f3ff14;
+  }
+
+    .dark .dark\:bg-slate-800 {
+    --tw-bg-opacity: 1; 
+    background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1)) !important;
+  }
+  
+  .dark .dark\:bg-slate-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(48 9 69 / var(--tw-bg-opacity, 1)) !important;
+    color: rgb(200 220 220 / var(--tw-text-opacity, 1)) !important;
+  }
+  
+  .dark .dark\:text-slate-400 {
+    --tw-text-opacity: 1;
+    text-decoration-color: rgb(200 220 220 / var(--tw-text-opacity, 1)) !important;
+    text-shadow: 1px 2px 5px #181911, 1px 0 20px #f0f;
+  }
+
+  .test-bg {
+    @apply dark:bg-slate-900;
   }
   

@@ -3,11 +3,11 @@ import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import cn from "classnames";
-import { ThemeSwitcher } from "./_components/theme-switcher";
-// import navbar from "./_components/navbar";
-import NavBar from "./_components/navbar";
+import { ThemeSwitcher } from "@/app/_components/theme-switcher";
+import NavBar from "@/app/_components/navbar";
+import SideNav from "@/app/custom_help/sidenav";
 
-import "./globals.css";
+import "@/app/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -59,16 +59,16 @@ export default function RootLayout({
         <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
-      <body
-        className={cn(inter.className, "dark:bg-slate-900 dark:text-slate-400")}
-      >
+      <body>
+        <div className= "dark:bg-slate-900 dark:text-slate-400">
         {/* <navbar /> */}
         <div className="sticky top-0 z-50">
           <NavBar />
+          <ThemeSwitcher />
         </div>
-        <ThemeSwitcher />
         <div className="min-h-screen">{children}</div>
         <Footer />
+        </div>
       </body>
     </html>
   );
