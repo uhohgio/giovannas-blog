@@ -13,5 +13,5 @@ export type Post = {
   };
   content: string;
   preview?: boolean;
-  images?: Image[];
+  images: Image[];
 };

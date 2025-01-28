@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import { getAllPosts, getPostBySlug } from "@/lib/api";
 import { CMS_NAME } from "@/lib/constants";
 import markdownToHtml from "@/lib/markdownToHtml";
-import Alert from "@/app/_components/alert";
 import Container from "@/app/_components/container";
 import Header from "@/app/_components/header";
 import { PostBody } from "@/app/_components/post-body";
@@ -20,7 +19,7 @@ export default async function Post(props: Params) {
   }
 
   const content = await markdownToHtml(post.content || "");
-  const images = await markdownToHtml(post.images)
+  // const images = await markdownToHtml(post.images || "");
 
   return (
     <main>
@@ -32,14 +31,9 @@ export default async function Post(props: Params) {
             title={post.title}
             coverImage={post.coverImage}
             date={post.date}
-            // author={post.author}
+            author={post.author}
           />
           <PostBody content={content} />
-          {/* <h2> Photo Gallery </h2> */}
-          {/* <PostPhotos content={photos} /> */}
-          {/* style={{ display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-          gridGap: '1rem' }} */}
           <ImageList images={post.images} /> 
         </article>
       </Container>

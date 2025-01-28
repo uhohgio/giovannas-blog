@@ -5,8 +5,6 @@ import { Inter } from "next/font/google";
 import cn from "classnames";
 import { ThemeSwitcher } from "@/app/_components/theme-switcher";
 import NavBar from "@/app/_components/navbar";
-import SideNav from "@/app/custom_help/sidenav";
-
 import "@/app/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
