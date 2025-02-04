@@ -24,7 +24,7 @@ export default function Page() {
         `}
         </style>
       <Container>
-      <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight beegName">
+      <h2 className="font-orbitron mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight beegName">
         My Projects
       </h2>
         {morePosts.length > 0 && <MoreStories posts={morePosts} />}

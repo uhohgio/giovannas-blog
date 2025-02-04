@@ -12,6 +12,7 @@ export default function Index() {
   const morePosts = allPosts.slice(1);
 
   return (
+    <>
     <main>
       <Container>
         <Intro />
@@ -23,11 +24,12 @@ export default function Index() {
           slug={heroPost.slug}
           excerpt={heroPost.excerpt}
         />
-        <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
+        <h2 className="font-orbitron mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
           Highlighted Work
         </h2>
         {morePosts.length > 0 && <MoreStories posts={morePosts} />}
       </Container>
     </main>
+    </>
   );
 }

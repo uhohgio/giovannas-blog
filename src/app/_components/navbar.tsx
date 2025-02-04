@@ -27,14 +27,17 @@ const NavBar: React.FC = () => {
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: rgba(255, 0, 255, 0.5);
-            box-shadow: 0px 5px 5px rgba(255, 0, 255, 0.5); 
+            background-color: rgba(40, 10, 50, 0.3);
+            box-shadow: 0px 5px 5px rgba(40, 10, 50, 0.3);
             position: sticky;
             top: 0;
           }
 
           li {
             float: left;
+            font-family: 'Orbitron', "sans-serif";
+            // background-color: rgba(48, 9, 69, 0.3);
+            // box-shadow: 0px 5px 5px rgba(48, 9, 69, 0.3);
           }
 
           li a {
@@ -47,16 +50,16 @@ const NavBar: React.FC = () => {
           }
 
           li a:hover {
-            background-color: rgba(158, 243, 243, 0.73); 
+            background-color: rgba(235, 0, 255, 0.7); 
             position: sticky;;
             border-radius: 10px;
-            padding: 7px 16px;
+            padding: 7px 14px;
             transform: scale(1.1);
           }
 
           .active {
             border-radius: 5px;
-            padding: 7px 16px;
+            padding: 7px 14px;
             background-color:rgba(255, 0, 255, 0.4);
           }
         `}

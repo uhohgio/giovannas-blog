@@ -17,12 +17,18 @@ const styles = {
 };
 
 const ImageList: React.FC<{ images: Image[] }> = ({ images }) => {
+  if (!images || images.length === 0) {
+    return null; // Return nothing if there are no images
+  }
   return (
-    <div style={styles.imageContainer}>
+    <>
+    <h2 className=" font-orbitron max-w-2xl mx-auto mb-8 mt-8"> Photo Gallery </h2>
+    <div className="max-w-2xl mx-auto" style={styles.imageContainer}>
       {images?.map((image, index) => (
         <img key={index} src={image.url} alt={image.alt || ''} style={styles.img} />
       ))}
     </div>
+    </>
   );
 };
 

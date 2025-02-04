@@ -4,7 +4,7 @@ import MyTools from "../_components/my_tools";
 export default function Page() {
     return (
         <main>
-            <div style={{ padding: '40px 40px', maxWidth: '10'}}>
+            <div className = "font-orbitron" style={{ padding: '40px 40px', maxWidth: '10'}}>
                 <h1 style={{ fontWeight: 'bold', fontSize: '100px'}}> Tech Stack ! </h1>
                     
                 <h2 style={{ fontWeight: 'bold', fontSize: '40px'}}> <u>Languages</u> </h2>

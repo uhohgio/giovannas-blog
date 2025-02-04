@@ -24,5 +24,3 @@ images:
 Krill Yourself is a casual 3D strategy game made in Unity featuring a troupe of shrimp in a race against the clock to cook themselves. With this pun-filled project in the makes, a group of 6 college students have fun building a simple platformer with plenty hidden shrimp secrets.
 
 ---
-
-## Photo Gallery

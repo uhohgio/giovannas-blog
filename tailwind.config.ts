@@ -10,6 +10,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        orbitron: ["Orbitron", "sans-serif"],
+        // neuropol: ['Neuropol', 'sans-serif'],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
