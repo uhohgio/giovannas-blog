@@ -6,7 +6,7 @@ export function Intro() {
       <h1 className="font-orbitron text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
       Gio Ehrig
       </h1>
-      <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
+      {/* <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
         A personal portfolio made using {" "}
         <a
           href="https://nextjs.org/"
@@ -14,7 +14,7 @@ export function Intro() {
         >
           Next.js
         </a>{" "} and {CMS_NAME}.
-      </h4>
+      </h4> */}
     </section>
   );
 }
