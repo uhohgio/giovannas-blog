@@ -1,5 +1,6 @@
 import { type Author } from "./author";
 import { type Image } from "./image";
+import { type Link } from "./link";
 
 export type Post = {
   slug: string;
@@ -14,4 +15,5 @@ export type Post = {
   content: string;
   preview?: boolean;
   images: Image[];
+  links: Link[];
 };

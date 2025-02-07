@@ -9,6 +9,7 @@ import { PostBody } from "@/app/_components/post-body";
 import { PostHeader } from "@/app/_components/post-header";
 // import { PostPhotos } from "@/app/_components/post-photos";
 import ImageList from "@/app/_components/image-list";
+import LinkList from "@/app/_components/links-list";
 
 export default async function Post(props: Params) {
   const params = await props.params;
@@ -34,7 +35,9 @@ export default async function Post(props: Params) {
             author={post.author}
           />
           <PostBody content={content} />
+          <LinkList links={post.links} />
           <ImageList images={post.images} /> 
+
         </article>
       </Container>
     </main>

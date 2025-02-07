@@ -6,10 +6,9 @@ import { getAllPosts } from "@/lib/api";
 
 export default function Index() {
   const allPosts = getAllPosts();
-
   const heroPost = allPosts[0];
+  const morePosts = allPosts.slice(1,3);
 
-  const morePosts = allPosts.slice(1);
 
   return (
     <>
@@ -25,7 +24,7 @@ export default function Index() {
           excerpt={heroPost.excerpt}
         />
         <h2 className="font-orbitron mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
-          Highlighted Work
+          Recent Work
         </h2>
         {morePosts.length > 0 && <MoreStories posts={morePosts} />}
       </Container>
