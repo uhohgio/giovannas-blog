@@ -37,6 +37,13 @@ images:
         alt: "faq"
       },
     ]
+links: 
+    [
+      {
+        url: "https://github.com/kchan5071/Ice-Cream-Tracker", 
+        alt: "The git repo"
+      },
+    ]    
 ---
 
 Our team was tasked to develop an automated tracking system for Tom and Adam’s Ice Cream Company.  The automated system, referred to as ICE TRACK, will provide the initial tracking capability by 12/7/2024. The clients for this system have indicated that ICE TRACK should support the following business functional areas: 
