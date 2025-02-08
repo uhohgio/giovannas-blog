@@ -11,11 +11,11 @@ ogImage:
 links: 
     [
       {
-        url: "https://microstudio.io/FacilitatorGio/plantgame/D433SU84/", 
-        alt: "Game: Life Source"
+        url: "https://microstudio.dev/i/FacilitatorGio/kitchenplants/", 
+        alt: "Game: Kitchen Plants"
       },
       {
-        url: "https://microstudio.io/FacilitatorGio/sky_flyer_v3/SSUE9XKG/",
+        url: "https://microstudio.dev/i/FacilitatorGio/sky_flyer_v3/",
         alt:  "Game: Sky Flyer"
       },
     ]
