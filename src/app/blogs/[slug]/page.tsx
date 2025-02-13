@@ -1,42 +1,39 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getAllPosts, getPostBySlug } from "@/lib/api";
-// import { CMS_NAME } from "@/lib/constants";
+import { getAllBlogs, getBlogBySlug } from "@/lib/api";
 import markdownToHtml from "@/lib/markdownToHtml";
 import Container from "@/app/_components/container";
 import Header from "@/app/_components/header";
 import { PostBody } from "@/app/_components/post-body";
-import { PostHeader } from "@/app/_components/post-header";
-// import { PostPhotos } from "@/app/_components/post-photos";
+import { BlogHeader } from "@/app/_components/blog-header";
 import ImageList from "@/app/_components/image-list";
 import LinkList from "@/app/_components/links-list";
 
-export default async function Post(props: Params) {
-  const params = await props.params;
-  const post = getPostBySlug(params.slug);
+export default async function Blog(props: Params) {
+    const params = await props.params;
+  console.log("Fetching blog page for slug:", params.slug);
+//   const params = await props.params;
+  const post = getBlogBySlug(params.slug);
 
   if (!post) {
     return notFound();
   }
 
   const content = await markdownToHtml(post.content || "");
-  // const images = await markdownToHtml(post.images || "");
 
   return (
     <main>
-      {/* <Alert preview={post.preview} /> */}
       <Container>
         <Header />
         <article className="mb-32">
-          <PostHeader
+          <BlogHeader
             title={post.title}
             coverImage={post.coverImage}
             date={post.date}
-            author={post.author}
           />
           <PostBody content={content} />
-          <LinkList links={post.links} />
-          <ImageList images={post.images} /> 
+          <LinkList links={post.links || {}} />
+          <ImageList images={post.images || {}} /> 
 
         </article>
       </Container>
@@ -49,10 +46,11 @@ type Params = {
     slug: string;
   }>;
 };
+  
 
 export async function generateMetadata(props: Params): Promise<Metadata> {
   const params = await props.params;
-  const post = getPostBySlug(params.slug);
+  const post = getBlogBySlug(params.slug);
 
   if (!post) {
     return notFound();
@@ -64,13 +62,14 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
     title,
     openGraph: {
       title,
-      images: [post.ogImage.url],
+      images: post.ogImage ? [post.ogImage.url] : [],
     },
   };
 }
 
 export async function generateStaticParams() {
-  const posts = getAllPosts();
+  const posts = getAllBlogs();
+  console.log("Static params for blogs:", posts);
 
   return posts.map((post) => ({
     slug: post.slug,

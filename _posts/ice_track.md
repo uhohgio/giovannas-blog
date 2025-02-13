@@ -53,7 +53,6 @@ Ice Track was originally created as an assignment for a software engineering cou
 
 I, along with 6 other students, created the skeleton of an online web application that allows you to to track and update the inventory for an ice cream company. 
 
-
 ---
 
 ## What I learned!
