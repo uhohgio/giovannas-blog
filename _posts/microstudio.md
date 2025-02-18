@@ -16,7 +16,15 @@ links:
       },
       {
         url: "https://microstudio.dev/i/FacilitatorGio/sky_flyer_v3/",
-        alt:  "Game: Sky Flyer"
+        alt: "Game: Sky Flyer"
+      },
+      {
+        url: "https://microstudio.dev/i/FacilitatorGio/slime_racer/", 
+        alt: "Game: Slime Racer"
+      },
+      {
+        url: "https://microstudio.dev/i/FacilitatorGio/bubbles/",
+        alt: "Sample Project: Bubbles"
       },
     ]
 ---

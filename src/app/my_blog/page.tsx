@@ -22,7 +22,8 @@ export default function Page() {
       <h2 className="font-orbitron mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight beegName">
         My Blog!
       </h2>
-      <h3 className="mb-2 text-lg font-bold tracking-tighter leading-tight beegName"> Wow! You found the secret blog page! Enjoy a read into my mind: </h3>
+      <h1 className="mb-2 text-lg tracking-tighter leading-tight beegName"> 
+        Welcome to my blog page! Enjoy a read into my mind: </h1>
         {moreBlogs.length > 0 && <MoreBlogs blogs={moreBlogs} />}
       </Container>
     </main>
