@@ -30,6 +30,7 @@ type Props2 = {
         <div className="font-orbitron text-lg mb-4">
           <DateFormatter dateString={date} />
         </div>
+        {/* <h1 className="text-lg tracking-tighter leading-relaxed mb-4">{excerpt}</h1> */}
         <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
         {/* <Avatar name={author.name} picture={author.picture} /> */}
       </div>
