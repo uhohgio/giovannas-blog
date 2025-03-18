@@ -11,7 +11,7 @@ import LinkList from "@/app/_components/links-list";
 
 export default async function Blog(props: Params) {
     const params = await props.params;
-  console.log("Fetching blog page for slug:", params.slug);
+  // console.log("Fetching blog page for slug:", params.slug);
 //   const params = await props.params;
   const post = getBlogBySlug(params.slug);
 
@@ -69,7 +69,7 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
 
 export async function generateStaticParams() {
   const posts = getAllBlogs();
-  console.log("Static params for blogs:", posts);
+  // console.log("Static params for blogs:", posts);
 
   return posts.map((post) => ({
     slug: post.slug,

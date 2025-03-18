@@ -16,6 +16,7 @@ export function Footer() {
             <a
               href="https://www.linkedin.com/in/gio-ehrig-691901214/"
               className="mx-3 font-regular hover:underline"
+              target="_blank"
             >
               
               LinkedIn 
@@ -23,12 +24,14 @@ export function Footer() {
             <a
               href="https://github.com/uhohgio"
               className="font-orbitron mx-3 font-regular hover:underline"
+              target="_blank"
             >
               GitHub
             </a>
             <a
               href="mailto:gioehrig@gmail.com"
               className="font-orbitron mx-3 font-regular hover:underline"
+              target="_blank"
             >
               Email
             </a>

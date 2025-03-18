@@ -21,6 +21,11 @@ export const languages = [ {
     explanation: 'In my postgrad career I have spent a lot of time using JavaScript for web development, and I have become quite comfortable with it.',
 },
 {
+    name: 'TypeScript',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png',
+    explanation: 'With my use of Javascript, I have learned the benefits of TypeScript instead and have used it as a tool to both better my code and ease the process of Web Development. Often using .ts and .tsx files.',
+},
+{
     name: 'Java',
     logo: 'https://www.vectorlogo.zone/logos/java/java-vertical.svg',
     explanation: 'My first programming language, where I learned how to properly structure code. It isn\'t super fresh but I could 100% pick it up again if necessary.',

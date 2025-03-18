@@ -33,7 +33,7 @@ const blogDirectory = join(process.cwd(), "_blogs");
 export function getBlogSlugs() {
   try {
     const slugs = fs.readdirSync(blogDirectory);
-    console.log("Blog slugs found:", slugs);
+    // console.log("Blog slugs found:", slugs);
     return slugs;
   } catch (error) {
     console.error("Error reading blog directory:", error);
