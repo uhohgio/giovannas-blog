@@ -22,7 +22,7 @@ body {
     padding: 0;
     font-family: 'Inter', sans-serif;
     /* background: linear-gradient(135deg,#432049, #061f2b); */
-    background:#887eaa;
+    background:#44a391;
     color: #cee;
     /* text-shadow: 1px 2px 5px #1f0028, ; */
     text-shadow: 1px 2px 5px #2c152c, 0px 0 20px #fd00ff;
@@ -139,7 +139,7 @@ body {
   }
   .bg-slate-800 {
     --tw-bg-opacity: 1; 
-    background-color: rgb(127 10 245 / var(--tw-bg-opacity, 1)) !important;
+    background-color: rgb(22 80 61 / var(--tw-bg-opacity, 1)) !important;
   }
   
   .dark .dark\:bg-slate-900 {
