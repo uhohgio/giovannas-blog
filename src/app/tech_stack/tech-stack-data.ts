@@ -1,5 +1,3 @@
-import exp from "constants"
-
 export const languages = [ {
     name: 'C++',
     logo: 'https://raw.githubusercontent.com/tandpfun/skill-icons/refs/heads/main/icons/CPP.svg',

@@ -1,5 +1,5 @@
 import React from 'react';
-import { type Image } from '@/interfaces/image';
+import { type Image } from '@/interfaces/link';
 
 const styles = {
   imageContainer: {
