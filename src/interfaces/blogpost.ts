@@ -1,5 +1,5 @@
 import { type Author } from "./author";
-import { type Image } from "./image";
+import { type Image } from "./link";
 import { type Link } from "./link";
 
 export type Blogpost = {
