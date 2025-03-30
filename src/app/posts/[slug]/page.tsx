@@ -20,7 +20,6 @@ export default async function Post(props: Params) {
   }
 
   const content = await markdownToHtml(post.content || "");
-  // const images = await markdownToHtml(post.images || "");
 
   return (
     <main>
