@@ -79,7 +79,30 @@ body {
       /* transform: scale(1.05); */
     }
   }
+  /* .enlarge-image {
+    transition: transform 0.5s ease-out;
+  }
 
+  .enlarge-image:hover {
+    animation: enlarge-image 1s forwards ease-out;
+  }
+
+  @keyframes enlarge-image {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(2.5);
+    }
+  } */
+
+  .enlarge-image {
+    transition: transform 1s ease-out;
+  }
+  
+  .enlarge-image:hover {
+    transform: scale(2.5);
+  }
   
   /* 4. Button Styles for Cyberpunk Look */
   .button {

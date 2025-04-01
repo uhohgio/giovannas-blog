@@ -2,7 +2,7 @@
 title: "Ebi Troupe"
 excerpt: "A casual strategy game where a troupe of shrimp is in a race against the clock to cook themselves."
 coverImage: "/assets/blog/krill-yourself/cover.png"
-date: "2025-01-25"
+date: "2024-08-25"
 author:
   name: Gio Ehrig
   picture: "/assets/blog/authors/gio_12_2025.jpeg"

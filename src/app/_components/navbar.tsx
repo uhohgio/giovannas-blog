@@ -178,7 +178,12 @@ const NavBar: React.FC = () => {
 
         {/* Desktop Menu */}
         <ul className="desktop-menu">
-          {[{ name: "Home", href: "/" }, { name: "Tech Stack", href: "/tech_stack" }, { name: "My Projects", href: "/my_projects" }, { name: "Blog", href: "/my_blog" }].map(
+          {[
+          { name: "Home", href: "/" }, 
+          { name: "Tech Stack", href: "/tech_stack" }, 
+          { name: "My Projects", href: "/my_projects" }, 
+          // { name: "Blog", href: "/my_blog"} // Uncomment this line to add the Blog link back, taken down because it's a little useless
+        ].map(
             (link) => (
               <li key={link.href}>
                 <a href={link.href} className={pathname === link.href ? "active" : ""}>

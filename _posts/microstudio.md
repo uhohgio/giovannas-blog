@@ -12,19 +12,19 @@ links:
     [
       {
         url: "https://microstudio.dev/i/FacilitatorGio/kitchenplants/", 
-        alt: "Game: Kitchen Plants"
+        alt: "Game: Kitchen Plants🌷"
       },
       {
         url: "https://microstudio.dev/i/FacilitatorGio/sky_flyer_v3/",
-        alt: "Game: Sky Flyer"
+        alt: "Game: Sky Flyer🐤"
       },
       {
         url: "https://microstudio.dev/i/FacilitatorGio/slime_racer/", 
-        alt: "Game: Slime Racer"
+        alt: "Game: Slime Racer🐜"
       },
       {
         url: "https://microstudio.dev/i/FacilitatorGio/bubbles/",
-        alt: "Sample Project: Bubbles"
+        alt: "Sample Project: Bubbles🫧"
       },
     ]
 ---

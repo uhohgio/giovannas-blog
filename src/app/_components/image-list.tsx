@@ -32,6 +32,7 @@ const ImageList: React.FC<{ images: Image[] }> = ({ images }) => {
             src={image.url}
             alt={image.alt || ''}
             style={styles.img}
+            className='enlarge-image'
           />
         ))}
       </div>

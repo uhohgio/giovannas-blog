@@ -1,3 +1,5 @@
+  // small interfaces for links, tech tools, and images
+  
   export type Link = {
     url: string;
     alt: string;
