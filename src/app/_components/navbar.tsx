@@ -27,7 +27,7 @@ const NavBar: React.FC = () => {
       <style>
         {`
           :root {
-            --accent-color: rgba(235, 0, 255, 0.7);
+            --accent-color: rgba(235, 0, 255, 0.5);
             --text-color: #cee;
             --nav-bg: rgba(40, 10, 50, 0.5);
             --menu-bg: rgba(40, 10, 50, 0.5); /* Dark mode background for mobile */
@@ -36,9 +36,10 @@ const NavBar: React.FC = () => {
           /* Light Mode Adjustments */
           @media (prefers-color-scheme: light) {
             :root {
-              --accent-color: rgba(120, 0, 200, 0.7);
-              --text-color: #222;
-              --nav-bg: rgba(255, 255, 255, 0.9);
+              --accent-color: rgba(200, 100, 200, 0.5);
+              --text-color: #266;
+              // text-shadow: 1px 1px 2px #cee;
+              --nav-bg: rgba(255, 255, 255, 0.7);
               --menu-bg: rgba(120, 0, 200, 0.7); /* Light mode background for mobile */
             }
           }

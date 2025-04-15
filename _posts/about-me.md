@@ -2,7 +2,7 @@
 title: "About Me!"
 excerpt: "My name is Giovanna Ehrig, and I am a recent computer science graduate from San Diego State University."
 coverImage: "/assets/blog/about-me/gio_at_grand_canyon.JPG"
-date: "2025-02-07"
+date: "2025-04-15"
 author:
   name: Gio Ehrig
   picture: "/assets/blog/authors/gio_12_2025.jpg"
