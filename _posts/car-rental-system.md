@@ -13,7 +13,7 @@ images:
     [
       {
         url: "/assets/blog/car-rental-system/design-diagram.png",
-        alt:  "software desgin diagram"
+        alt:  "software design diagram"
       },
       {
         url: "/assets/blog/car-rental-system/design-doc.png",
