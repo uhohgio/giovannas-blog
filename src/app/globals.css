@@ -15,6 +15,7 @@
   --main-color: rgba(66, 27, 20, 0.842);
   /* --accent-color: rgba(89, 173, 81, 0.7); */
   --accent-color: rgba(255,0,255, 0.2)
+  /* font-size: 16px; */
 }
 
 body {
@@ -57,6 +58,9 @@ body {
     }
   }
 
+  sub {
+    font-size: .5rem;
+  }
 
   
   /* 3. Custom Glow Effect for Images */

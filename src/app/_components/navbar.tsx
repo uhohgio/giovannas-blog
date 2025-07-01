@@ -183,7 +183,7 @@ const NavBar: React.FC = () => {
           { name: "Home", href: "/" }, 
           { name: "Tech Stack", href: "/tech_stack" }, 
           { name: "My Projects", href: "/my_projects" }, 
-          // { name: "Blog", href: "/my_blog"} // Uncomment this line to add the Blog link back, taken down because it's a little useless
+          { name: "Blog", href: "/my_blog"} // Uncomment this line to add the Blog link back, taken down because it's a little useless
         ].map(
             (link) => (
               <li key={link.href}>
